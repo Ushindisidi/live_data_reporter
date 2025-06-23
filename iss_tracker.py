@@ -36,7 +36,12 @@ def get_iss_position(log_func, save_func, gui_output_func=None):
             screen.title("ISS Tracker")
             screen.setworldcoordinates(-180, -90, 180, 90)
             if os.path.exists(map_path):
-                screen.bgpic(map_path)
+                try:
+                    screen.bgpic(map_path)
+                    print(f"Debug: successfully set background from {map_path}")
+                except turtle.TurtleGraphicsError as e:
+                    print(f"Error: Failed to load map image {map_path}. Using default background. Error: {e}")
+                screen.bgcolor("lightblue")  # Fallback background color
             else:
                 print(f"Map image not found at {map_path}. Using default background.")
                 screen.bgcolor("lightblue")
@@ -44,6 +49,7 @@ def get_iss_position(log_func, save_func, gui_output_func=None):
                 try:
                     screen.register_shape(iss_icon_path)
                     iss_shape_name = iss_icon_path
+                    print(f"Debug: successfully registered ISS icon from {iss_icon_path}")
                 except turtle.TurtleGraphicsError:
                     print(f"Warning: ISS icon not found at {iss_icon_path}. Using default turtle shape.")
                     iss_shape_name = "square"
