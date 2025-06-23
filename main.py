@@ -2,7 +2,7 @@ import sys
 import os
 import datetime
 from dotenv import load_dotenv
-#from astronauts import get_astronauts
+from astronauts import get_astronauts
 #from iss_tracker import get_iss_position
 #from news_or_stock import get_business_headlines
 def log_api_interaction(module_name, endpoint, status, message=""):
@@ -35,7 +35,7 @@ def main():
         choice = input("Enter your choice (1-4): ").strip()
         if choice == "1":
             print("Fetching astronauts in space...")
-            #get_astronauts(log_api_interaction, save_data)
+            get_astronauts(log_api_interaction, save_data)
         elif choice == "2":
             print("Fetching ISS position...")
             #get_iss_position(log_api_interaction, save_data)
