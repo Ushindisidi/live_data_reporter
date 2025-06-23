@@ -27,7 +27,7 @@ def display_menu():
     print("2. Track ISS Position")
     print("3. view top U.S. Business Headlines")
     print("4. Exit")
-print("-------------------------------")
+    print("-------------------------------")
 def main():
     load_dotenv()
     while True:

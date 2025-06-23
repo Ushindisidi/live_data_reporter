@@ -2,8 +2,9 @@ import requests
 from dotenv import load_dotenv
 import os
 import json
+from tabulate import tabulate
 load_dotenv()
-def get_business_headlines(log_func):
+def get_business_headlines(log_func, gui_output_func=None):
     api_key = os.getenv("NEWS_API_KEY")
     module_name = "news_or_stock.py"
     endpoint_name = "NewsAPI (Top U.S. Business Headlines)"
@@ -23,19 +24,21 @@ def get_business_headlines(log_func):
             log_func(module_name, endpoint_name, "FAILURE", f"NewsAPI Error: {error_code} - {error_message}")
             return False
         log_func(module_name, url, "SUCCESS")
-        print("\n--- Top 3 U.S. Business Headlines ---")
+        headers = ["#", "Title", "Source", "Published Date", "URL"]
+        table_data = []
         if data.get('articles'):
             for i, article in enumerate(data['articles'][:3]):
                 title = article.get('title', 'N/A')
                 source_name = article.get('source', {}).get('name', 'N/A')
                 url_link = article.get('url', 'N/A')
                 published_at = article.get('publishedAt', 'N/A')
-                print(f"{i + 1}. {title}")
-                print(f"   Source: {source_name} (Published: {published_at.split('T')[0] if 'T' in published_at else published_at})")
-                print(f"   URL: {url_link}")
-                print("-----------------------------")
+                published_date = published_at.split('T')[0] if 'T' in published_at else published_at
+                table_data.append([i + 1, title, source_name, published_date, url_link])
         else:
-            print("No business headlines found (or articles list is empty).")
+                table_data.append(["No articles found", "N/A", "N/A", "N/A", "N/A"])
+                print("\n--- Top U.S. Business Headlines ---")
+        print(tabulate(table_data, headers=headers, tablefmt="grid"))
+        print("-----------------------------")
         return True
     except requests.exceptions.RequestException as e:
         print(f"Network error fetching business headlines: {e}")

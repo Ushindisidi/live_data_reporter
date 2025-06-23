@@ -1,26 +1,31 @@
 import requests
 import datetime
-def get_astronauts(log_func, save_func):
+from tabulate import tabulate
+def get_astronauts(log_func, save_func, gui_output_func=None):
     url = "http://api.open-notify.org/astros.json"
     module_name = "astronauts.py"
     try:
         response = requests.get(url)
         response.raise_for_status()  # Raise an error for bad responses
         data = response.json()
-        log_func(module_name, url, "SUCCCESS")
-        print("\n-- Astronauts currently in space --")
+        log_func(module_name, url, "SUCCESS")
+        headers = ["Name", "Craft"]
+        table_data = []
         current_time_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         astronaut_info_to_save = f"--- Astronauts in space at {current_time_str} ---\n"
         if data and 'people' in data:
             for p in data['people']:
                 name = p.get('name', 'N/A')
                 craft = p.get('craft', 'N/A')
-                print(f"{name} is currently on the {craft} spacecraft.")
+                table_data.append([name, craft])
                 astronaut_info_to_save += f"- {name} is currently on the {craft} spacecraft.\n"
             astronaut_info_to_save += "-----------------------------\n"
         else:
-            print("No astronaut data found.")
+            table_data.append(["No astronaut data found", "N/A"])
             astronaut_info_to_save += "No astronaut data found.\n------------------------------\n"
+        print("\n--- Astronauts currently in Space ---")
+        print(tabulate(table_data, headers=headers, tablefmt="grid"))
+        print("-----------------------------")
         save_func("data/iss_data.txt", astronaut_info_to_save)
         print("Astronaut data saved to data/iss_data.txt")
         return True
