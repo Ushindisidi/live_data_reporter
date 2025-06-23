@@ -4,7 +4,7 @@ import datetime
 from dotenv import load_dotenv
 from astronauts import get_astronauts
 from iss_tracker import get_iss_position
-#from news_or_stock import get_business_headlines
+from news_or_stock import get_business_headlines
 def log_api_interaction(module_name, endpoint, status, message=""):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_entry = f"[{timestamp}] Module: {module_name}, Endpoint: {endpoint}, Status: {status}, Message: {message}\n"
@@ -41,7 +41,7 @@ def main():
             get_iss_position(log_api_interaction, save_data)
         elif choice == "3":
             print("Fetching top U.S. business headlines...")
-            #get_business_headlines(log_api_interaction, save_data)
+            get_business_headlines(log_api_interaction)
         elif choice == "4":
             print("Exiting the live data reporter. Goodbye!")
             break
