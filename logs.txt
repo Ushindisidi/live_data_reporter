@@ -45,3 +45,5 @@
 [2025-06-24 12:42:45] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCESS, Message: 
 [2025-06-24 12:42:52] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
 [2025-06-24 13:09:46] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-24 13:21:03] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCESS, Message: 
+[2025-06-24 13:21:45] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 

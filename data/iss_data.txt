@@ -191,3 +191,22 @@ Latitude: -49.9913°, Longitude: 142.0327°
 - Ye Guangfu is currently on the Tiangong spacecraft.
 -----------------------------
 
+--- Astronauts in space at 2025-06-24 13:21:03 ---
+- Oleg Kononenko is currently on the ISS spacecraft.
+- Nikolai Chub is currently on the ISS spacecraft.
+- Tracy Caldwell Dyson is currently on the ISS spacecraft.
+- Matthew Dominick is currently on the ISS spacecraft.
+- Michael Barratt is currently on the ISS spacecraft.
+- Jeanette Epps is currently on the ISS spacecraft.
+- Alexander Grebenkin is currently on the ISS spacecraft.
+- Butch Wilmore is currently on the ISS spacecraft.
+- Sunita Williams is currently on the ISS spacecraft.
+- Li Guangsu is currently on the Tiangong spacecraft.
+- Li Cong is currently on the Tiangong spacecraft.
+- Ye Guangfu is currently on the Tiangong spacecraft.
+-----------------------------
+
+--- ISS Position at 2025-06-24 10:22:25 UTC ---
+Latitude: 49.0666°, Longitude: -91.3070°
+-----------------------------
+

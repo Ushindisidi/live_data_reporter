@@ -43,16 +43,16 @@ It's good practice to use a virtual environment to manage project dependencies.
 ```bash
 python -m venv venv
 
-##3. Activate the virtual environment
+3. Activate the virtual environment
 ```bash
 source venv/scripts/activate
 
-##4. Install dependencies
+4. Install dependencies
 Install the required python libraries using pip:
 ``` bash
 pip install -r requirements.text
 
-##5. Set up API Keys
+5. Set up API Keys
 This project uses NewsAPI, which requires an API key.
    Go to NewsAPI.org and sign up for a free developer account to get your API key.
    In the root directory of your project (e.g., live-data-reporter/), create a new file named .env.
@@ -60,7 +60,7 @@ This project uses NewsAPI, which requires an API key.
    NEWS_API_KEY=your_news_api_key_here
 
    (Replace your_news_api_key_here with the actual key you obtained).
-##6. Prepare Images for ISS Tracker (Important!)
+6. Prepare Images for ISS Tracker (Important!)
 The ISS tracker uses image files for the world map and the ISS icon.
   In the root of your project, create a new directory named images/.
   Find or create two .gif image files:
