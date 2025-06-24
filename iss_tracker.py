@@ -92,13 +92,6 @@ def get_iss_position(log_func, save_func, gui_output_func=None):
         print(f"An unexpected error occurred while fetching ISS position: {e}")
         log_func(module_name, url, "FAILURE", f"Unexpected Error: {e}")
         return False
-if __name__ == "__main__":
-    # Example usage
-    print("Running iss_tracker.py directly for testing purposes.")
-    def dummy_log(*args, **kwargs):
-        print(f"Dummy log: {args}")
-    def dummy_save(*args, **kwargs):
-        print(f"Dummy save: {args}")
-    get_iss_position(dummy_log, dummy_save)
+
     
         
