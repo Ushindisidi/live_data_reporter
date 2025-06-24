@@ -1,7 +1,7 @@
 import requests
 import datetime
 from tabulate import tabulate
-def get_astronauts(log_func, save_func, gui_output_func=None):
+def get_astronauts(log_func, save_func): # Function to fetch current astronauts in space from Open Notify API
     url = "http://api.open-notify.org/astros.json"
     module_name = "astronauts.py"
     try:
@@ -13,14 +13,14 @@ def get_astronauts(log_func, save_func, gui_output_func=None):
         table_data = []
         current_time_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         astronaut_info_to_save = f"--- Astronauts in space at {current_time_str} ---\n"
-        if data and 'people' in data:
-            for p in data['people']:
+        if data and 'people' in data: # Check if 'people' key exists in the response
+            for p in data['people']: # Iterate through each astronaut
                 name = p.get('name', 'N/A')
                 craft = p.get('craft', 'N/A')
                 table_data.append([name, craft])
                 astronaut_info_to_save += f"- {name} is currently on the {craft} spacecraft.\n"
             astronaut_info_to_save += "-----------------------------\n"
-        else:
+        else: # If no astronaut data is found, append a message to the table
             table_data.append(["No astronaut data found", "N/A"])
             astronaut_info_to_save += "No astronaut data found.\n------------------------------\n"
         print("\n--- Astronauts currently in Space ---")
@@ -28,7 +28,8 @@ def get_astronauts(log_func, save_func, gui_output_func=None):
         print("-----------------------------")
         save_func("data/iss_data.txt", astronaut_info_to_save)
         print("Astronaut data saved to data/iss_data.txt")
-        return True
+        return True # Successfully fetched and displayed astronaut data
+    # Handle specific exceptions
     except requests.exceptions.RequestException as e:
         print(f"Error fetching astronaut data: {e}")
         log_func(module_name, url, "FAILURE", f"JSONDecodeError: {e}")
@@ -42,12 +43,6 @@ def get_astronauts(log_func, save_func, gui_output_func=None):
         log_func(module_name, url, "FAILURE", f"Unexpected Error: {e}")
         return False
 
-if __name__ == "__main__":
-    # Example usage
-    print("Running astronauts.py directly for testing purposes.")
-    def dummy_log(*args, **kwargs):
-        print(f"Dummy log: {args}")
-    def dummy_save(*args, **kwargs):
-        print(f"Dummy save: {args}")
-    get_astronauts(dummy_log, dummy_save)
+
+    
     
