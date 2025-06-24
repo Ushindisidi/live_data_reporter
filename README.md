@@ -50,7 +50,7 @@ source venv/scripts/activate
 4. Install dependencies
 Install the required python libraries using pip:
 ``` bash
-pip install -r requirements.text
+pip install -r requirements.txt
 
 5. Set up API Keys
 This project uses NewsAPI, which requires an API key.
