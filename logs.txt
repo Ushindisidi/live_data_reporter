@@ -1,0 +1,47 @@
+[2025-06-23 09:03:42] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCCESS, Message: 
+[2025-06-23 10:01:12] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 10:46:52] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 11:11:58] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 11:14:17] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 11:23:01] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 11:54:21] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCCESS, Message: 
+[2025-06-23 12:04:54] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCCESS, Message: 
+[2025-06-23 12:05:06] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 12:20:52] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCESS, Message: 
+[2025-06-23 12:25:22] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 12:28:26] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 12:28:26] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: FAILURE, Message: Unexpected Error: 
+[2025-06-23 12:38:04] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:38:28] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:38:59] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:39:09] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:40:04] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:41:08] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:43:05] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCESS, Message: 
+[2025-06-23 12:43:11] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 12:47:34] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 12:47:34] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: FAILURE, Message: Unexpected Error: 
+[2025-06-23 12:54:23] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:55:04] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:56:12] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 12:56:32] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-23 13:00:08] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 13:02:56] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 13:03:06] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCESS, Message: 
+[2025-06-23 13:19:01] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 13:42:50] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 13:56:15] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 14:19:38] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 14:27:31] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 14:30:12] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-23 14:30:13] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: FAILURE, Message: Unexpected Error: 
+[2025-06-24 12:02:13] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-24 12:02:58] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-24 12:02:58] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: FAILURE, Message: Unexpected Error: 
+[2025-06-24 12:40:30] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-24 12:42:05] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-24 12:42:05] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: FAILURE, Message: Unexpected Error: 
+[2025-06-24 12:42:30] Module: iss_tracker.py, Endpoint: http://api.open-notify.org/iss-now.json, Status: SUCCESS, Message: 
+[2025-06-24 12:42:45] Module: astronauts.py, Endpoint: http://api.open-notify.org/astros.json, Status: SUCCESS, Message: 
+[2025-06-24 12:42:52] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 
+[2025-06-24 13:09:46] Module: news_or_stock.py, Endpoint: https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=0d4d45d4b1a14d749ed5554c7f2db4c3, Status: SUCCESS, Message: 

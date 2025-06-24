@@ -43,30 +43,30 @@ It's good practice to use a virtual environment to manage project dependencies.
 ```bash
 python -m venv venv
 
-3. Activate the virtual environment
+##3. Activate the virtual environment
 ```bash
 source venv/scripts/activate
 
-4. Install dependencies
+##4. Install dependencies
 Install the required python libraries using pip:
 ``` bash
 pip install -r requirements.text
 
-5. Set up API Keys
+##5. Set up API Keys
 This project uses NewsAPI, which requires an API key.
- * Go to NewsAPI.org and sign up for a free developer account to get your API key.
- * In the root directory of your project (e.g., live-data-reporter/), create a new file named .env.
- * Add your NewsAPI key to this file in the following format:
+   Go to NewsAPI.org and sign up for a free developer account to get your API key.
+   In the root directory of your project (e.g., live-data-reporter/), create a new file named .env.
+   Add your NewsAPI key to this file in the following format:
    NEWS_API_KEY=your_news_api_key_here
 
    (Replace your_news_api_key_here with the actual key you obtained).
-6. Prepare Images for ISS Tracker (Important!)
+##6. Prepare Images for ISS Tracker (Important!)
 The ISS tracker uses image files for the world map and the ISS icon.
- * In the root of your project, create a new directory named images/.
- * Find or create two .gif image files:
-   * map.gif: A world map image.
-   * iss.gif: An icon for the International Space Station.
- * Place these .gif files inside the live-data-reporter/images/ directory.
+  In the root of your project, create a new directory named images/.
+  Find or create two .gif image files:
+    map.gif: A world map image.
+    iss.gif: An icon for the International Space Station.
+  Place these .gif files inside the live-data-reporter/images/ directory.
    Your project structure should look like this:
    live-data-reporter/
 ├── data/
@@ -85,12 +85,11 @@ The ISS tracker uses image files for the world map and the ISS icon.
 
    Note: Ensure map.gif and iss.gif are actual, non-animated .gif files, as the turtle module can be particular about image formats.
 How to Run
- * Make sure your virtual environment is activated.
- * Navigate to the root directory of the live-data-reporter project in your terminal.
- * Run the main application script:
+  Make sure your virtual environment is activated.
+  Navigate to the root directory of the live-data-reporter project in your terminal.
+  Run the main application script:
    python main.py
 
- * Follow the on-screen menu prompts to choose an option.
 Project Structure
 live-data-reporter/
 ├── data/
@@ -108,12 +107,12 @@ live-data-reporter/
 └── requirements.txt        # Python dependencies
 
 Troubleshooting
- * NEWS_API_KEY not found error: Ensure you have a .env file in the root directory with NEWS_API_KEY=your_key inside it.
- * Images not displaying for ISS Tracker:
-   * Confirm map.gif and iss.gif are in the images/ directory within your project root.
-   * Ensure they are true .gif files (not just renamed .png or .jpg). turtle can be picky.
-   * Run python in your project root and test import os; print(os.path.exists("images/map.gif")) to verify the path. Both should print True.
- * Network errors: Check your internet connection. API endpoints might also have rate limits or be temporarily down.
- * Status code 403 from nominatim.openstreetmap.org: This error occurs if the geocoder library is used without proper authentication or if the service is blocking requests. The current iss_tracker.py has this part commented out to avoid issues.
+  NEWS_API_KEY not found error: Ensure you have a .env file in the root directory with NEWS_API_KEY=your_key inside it.
+  Images not displaying for ISS Tracker:
+    Confirm map.gif and iss.gif are in the images/ directory within your project root.
+    Ensure they are true .gif files (not just renamed .png or .jpg). turtle can be picky.
+    Run python in your project root and test import os; print(os.path.exists("images/map.gif")) to verify the path. Both should print True.
+  Network errors: Check your internet connection. API endpoints might also have rate limits or be temporarily down.
+  Status code 403 from nominatim.openstreetmap.org: This error occurs if the geocoder library is used without proper authentication or if the service is blocking requests. The current iss_tracker.py has this part commented out to avoid issues.
 AUTHOR
 Ushindi Sidi❤
